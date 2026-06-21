@@ -89,6 +89,14 @@ This is a rough visual of what the GUI looks like. It was build using PyQt6 and 
 * Run as a service in the background.
 * register keyboard shortcuts for switching modes
 * custom lighting (big maybe)
+* Desktop Launcher (sans console launch)
+
+## Usage (currently)
+```
+cd ./keyboard-fusion-rgb/GUI\ WIP
+python ./gui_app.py
+```
+Config saves at ~/.config/
 
 # Methods
 ## Pre-programmed Modes

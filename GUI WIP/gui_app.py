@@ -14,7 +14,7 @@ class RGBDashboardApp(QtWidgets.QMainWindow):
         uic.loadUi("main.ui", self)
         
         # 2. Establish Config and Logging Paths
-        self.config_dir = os.path.join(os.path.expanduser("~"), ".config", "RGBFusionPro")
+        self.config_dir = os.path.join(os.path.expanduser("~"), ".config", "RGBFusionQt")
         os.makedirs(self.config_dir, exist_ok=True)
         self.log_file_path = os.path.join(self.config_dir, "error.log")
         
@@ -26,7 +26,7 @@ class RGBDashboardApp(QtWidgets.QMainWindow):
 
         # 3. Hardware Connection
         self.keyboard = KeyboardFusionRGB(vendor_id='0x1044', product_id='0x7A3C', layout='eng_us')
-        self.settings = QtCore.QSettings("RGBFusionPro", "Settings")
+        self.settings = QtCore.QSettings("RGBFusionQt", "Settings")
 
         # 4. State tracking variables (Staged local memory)
         self.active_mode = "static"

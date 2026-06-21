@@ -6,55 +6,330 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1058</width>
+    <height>799</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="btn_static_red">
+   <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>60</y>
-      <width>100</width>
-      <height>38</height>
+      <x>10</x>
+      <y>10</y>
+      <width>221</width>
+      <height>91</height>
      </rect>
     </property>
-    <property name="text">
-     <string>PushButton</string>
+    <property name="title">
+     <string>Device Status</string>
     </property>
     <property name="flat">
      <bool>false</bool>
     </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QLabel" name="lbl_mode">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>31</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Active Mode: Default White</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>58</y>
+       <width>114</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Brightness: 50%</string>
+     </property>
+    </widget>
    </widget>
-   <widget class="QSlider" name="slider_brightness">
+   <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>70</y>
-      <width>160</width>
-      <height>20</height>
+      <x>10</x>
+      <y>100</y>
+      <width>221</width>
+      <height>111</height>
      </rect>
     </property>
-    <property name="orientation">
-     <enum>Qt::Orientation::Horizontal</enum>
+    <property name="title">
+     <string>Global Controls</string>
     </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QSlider" name="horizontalSlider">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>160</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="singleStep">
+      <number>10</number>
+     </property>
+     <property name="pageStep">
+      <number>10</number>
+     </property>
+     <property name="value">
+      <number>50</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
    </widget>
-   <widget class="QLabel" name="lbl_status">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>30</y>
-      <width>67</width>
-      <height>21</height>
+      <x>11</x>
+      <y>260</y>
+      <width>1031</width>
+      <height>471</height>
      </rect>
     </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QGroupBox" name="groupBox_8">
+       <property name="title">
+        <string>Basic Modes</string>
+       </property>
+       <widget class="QWidget" name="">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>241</width>
+          <height>84</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="btn_static">
+           <property name="font">
+            <font>
+             <kerning>false</kerning>
+            </font>
+           </property>
+           <property name="contextMenuPolicy">
+            <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>Static Mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="btn_cycle">
+           <property name="contextMenuPolicy">
+            <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
+           </property>
+           <property name="text">
+            <string>Color Cycling</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QPushButton" name="btn_breathing">
+           <property name="text">
+            <string>Breathing Mode</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QGroupBox" name="groupBox_9">
+       <property name="title">
+        <string>Animated Motion Patterns</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>210</width>
+          <height>84</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="btn_flow">
+           <property name="text">
+            <string>Flow Mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="btn_wave">
+           <property name="text">
+            <string>Wave Mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="btn_radar">
+           <property name="text">
+            <string>Radar Mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="btn_spiral">
+           <property name="text">
+            <string>Spiral Mode</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QGroupBox" name="groupBox_10">
+       <property name="title">
+        <string>Complex Effects</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>241</width>
+          <height>128</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="1">
+          <widget class="QPushButton" name="btn_rain">
+           <property name="text">
+            <string>Rain Mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="btn_crash">
+           <property name="text">
+            <string>Crash Mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="btn_firework">
+           <property name="text">
+            <string>Firework Mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="btn_merge">
+           <property name="text">
+            <string>Merge Mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="btn_bloom">
+           <property name="text">
+            <string>Bloom Mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="btn_star">
+           <property name="text">
+            <string>Star Mode</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QGroupBox" name="groupBox_11">
+       <property name="title">
+        <string>Reactive/Keypress Effects</string>
+       </property>
+       <widget class="QWidget" name="">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>228</width>
+          <height>128</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>Ripple Mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" rowspan="2">
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="text">
+            <string>Trigger Mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" rowspan="2">
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="text">
+            <string>Pulse Mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1" rowspan="2">
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="text">
+            <string>Cross Mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="text">
+            <string>Dragonstrike</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -62,7 +337,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1058</width>
      <height>33</height>
     </rect>
    </property>

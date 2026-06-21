@@ -96,7 +96,8 @@ This is a rough visual of what the GUI looks like. It was build using PyQt6 and 
 cd ./keyboard-fusion-rgb/GUI\ WIP
 python ./gui_app.py
 ```
-Config saves at ~/.config/
+Config saves at ~/.config/RGBFusionQt
+* debug log is currently not saving
 
 # Methods
 ## Pre-programmed Modes

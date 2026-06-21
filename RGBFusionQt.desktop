@@ -1,0 +1,13 @@
+Ini, TOML
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=RGB Fusion Qt
+Comment=Manage custom keyboard RGB hardware matrix maps and profiles
+# Point this to the absolute path of your wrapper script
+Exec=~/code/keyboard-fusion-rgb/launch.sh
+# Point this to a valid png/svg file if you have an icon, or use a generic system icon
+Icon=input-keyboard
+Terminal=false
+Categories=Utility;Settings;
+StartupNotify=true

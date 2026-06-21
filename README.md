@@ -1,4 +1,7 @@
 # Keyboard Fusion RGB
+
+__**!! Please Note that the License on this does not change. None of my contributions alter the original developer's code. I am building out end user friendly additions, and felt it was worth forking the code to be able to keep pace with the changes. !!**__
+
 Python driver to control the lights in the keyboard in laptop AOURUS 15G.
 
 Keyboard information
@@ -67,6 +70,14 @@ keyboard = KeyboardFusionRGB(layout = 'eng_us')
 keyboard.set_static_mode(color_rgb=[0xff, 0x00, 0x00])
 ```
 More examples can be found in [example.py](https://github.com/rcassani/keyboard-fusion-rgb/blob/master/example.py)
+
+# Scripts
+* ```kb_change_menu.py```
+  * Built out basic commands using the base module to set two static modes and flow. with options for speed and brightness. Basic implementation example.
+* ```kb_light_change_v2.py```
+  * Refactored Menu with All Pre-Programmed Modes with options available. CLI Driven with Mode and Brightness Values Visible. Some assistance was obtained with Gemini in refactoring and shaving time off coding. The original script was the source provided as well as references for the different modes and options from the original repo.
+* ```kb_light_change_v3.py```
+  * Menu Refactored again for readability, no real additional changes made,
 
 # Methods
 ## Pre-programmed Modes

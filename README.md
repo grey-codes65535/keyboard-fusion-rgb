@@ -79,6 +79,17 @@ More examples can be found in [example.py](https://github.com/rcassani/keyboard-
 * ```kb_light_change_v3.py```
   * Menu Refactored again for readability, no real additional changes made,
 
+# GUI
+<p align="center">
+  <img src="https://raw.githubusercontent.com/grey-codes65535/keyboard-fusion-rgb/refs/heads/master/GUI%20WIP/img/RGBControl_Alpha.png" width="300" />
+</p>
+This is a rough visual of what the GUI looks like. It was build using PyQt6 and QT Designer. 
+
+## Goals
+* Run as a service in the background.
+* register keyboard shortcuts for switching modes
+* custom lighting (big maybe)
+
 # Methods
 ## Pre-programmed Modes
 The keyboard can be set to any of the 17 pre-programmed modes.
